@@ -255,7 +255,11 @@ void USB_Device::set_transfer_timeout(uint_t timeout)
 //==============================================================================
 void USB_Device::set_debug_mode(DebugLevel level)
 {
+#if LIBUSB_API_VERSION >= 0x01000106
+    libusb_set_option(context_.get(), LIBUSB_OPTION_LOG_LEVEL, level);
+#else
 	libusb_set_debug(context_.get(), level);
+#endif
 }
 
 //==============================================================================
