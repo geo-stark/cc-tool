@@ -1,0 +1,7 @@
+make clean
+rm -f Makefile Makefile.in aclocal.m4  compile  config.guess  config.log  config.sub  configure  install-sh  ltmain.sh  missing config.status libtool
+rm -rf autom4te.cache
+rm -f cc-tool
+pushd m4
+    rm -f libtool.m4  lt~obsolete.m4  ltoptions.m4  ltsugar.m4  ltversion.m4
+popd

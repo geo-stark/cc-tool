@@ -6,8 +6,8 @@ This is the original cc-tool hosted previously on sourceforge (http://sourceforg
 I (the author) currently have no plans to evolve it somehow although I'm ready to maintain it if needed
 
 ## Building from source, dependencies:
-Ubuntu: libusb-1.0, libboost-all-dev, 
-Fedora: boost-devel, libusb1-devel
+Ubuntu: libusb-1.0-0-dev, libboost-all-dev, autoconf, libtool
+Fedora: boost-devel, libusb1-devel, libtool, autoconf
 Mac OS 10.6.7, from ports: libusb boost pkgconfig
 
 ## User guide:
